@@ -1,0 +1,28 @@
+body {
+    background:#999;
+    font-family: arial;
+}
+
+
+h1, h2 {
+    color: rgb(226, 21, 21)
+}
+
+a{ 
+    color: orange;
+}
+
+p{
+    background: #666;
+    color: white;
+    padding: 10px;
+
+}
+.secondary {
+    background: none;
+    color:pink;
+}
+#special {
+    background: blueviolet;
+    color:pink;
+}
