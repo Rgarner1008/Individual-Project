@@ -18,6 +18,7 @@ from django.urls import path, include
 
 from mixquick.views import index
 from mixquick.views import random
+from mixquick.views import searchDrink
 
 urlpatterns = [
     path('admin/', admin.site.urls),
