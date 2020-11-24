@@ -1,1 +1,1 @@
-web: gunicorn quickmix\quickmix\wsgi.py --log-file -
+web: gunicorn quickmix.wsgi.py --log-file -
