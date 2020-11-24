@@ -1,1 +1,1 @@
-web: gunicorn C:\Users\The Navigator\Documents\GitHub\Individual-Project\quickmix\quickmix\wsgi.py --log-file -
+web: gunicorn quickmix\quickmix\wsgi.py --log-file -
