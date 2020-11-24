@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '0#r(1ei%x3pvp9eb6xnhny8r&q!-*nfzfp+n-uue=d=1=t1(%+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['quickmixproject.herokuapp.com', '127.0.0.1']
 
 
 # Application definition

@@ -1,0 +1,1 @@
+web: gunicorn quickmix.wsgi --log-file -
