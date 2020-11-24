@@ -1,18 +1,19 @@
- 
- 
 
-   var array = ["wine"]
+function changeText(){
+   
 var checkboxes = document.querySelectorAll('input[type=checkbox]:checked')
-
+let array = [];
 for ( i = 0; i < checkboxes.length; i++) {
+    console.log(checkboxes[i].value);
   array.push(checkboxes[i].value)
 }
  for(i=0;i<array.length;i++){
- var choice = (array[i]);
+ var choice = array[i]
  console.log(choice)
     getRandomDrink(choice);
  }
-
+}
+ 
     function getRandomDrink(liquor){
         
         fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${liquor}`)

@@ -1,0 +1,17 @@
+{% load static %}
+
+{% block content %}
+    <link href="{% static 'css/gameStyle.css' %}" rel="stylesheet"/>
+    <h1>Create New Account</h1>
+    <div style="text-align: center;">
+        <div style="display: inline-block; text-align: left;">
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <center>
+                    <button class = "button">Register</button>
+                </center>
+            </form>
+        </div>
+    </div>
+{% endblock content %}

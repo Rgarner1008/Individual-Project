@@ -5,9 +5,12 @@ from . import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
-    path('', views.index),
-    path('random/', views.random),
-    path('search/', views.searchDrink),
+    path('', views.index, name='home'),
+    path('random/', views.random, name='random'),
+    path('search/', views.searchDrink, name='search'),
+    path('login/', views.loginV, name='login'),
+    path('logout/', views.logout, name='logout'),
+    path('register/', views.register, name='register'),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

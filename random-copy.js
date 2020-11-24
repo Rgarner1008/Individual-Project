@@ -1,5 +1,7 @@
-function getRandomDrink(){
-    fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Vodka')
+
+
+function getRandomDrink(letter){
+    fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?f='+letter)
     .then(
       function(response) {
         if (response.status !== 200) {
@@ -19,12 +21,19 @@ function getRandomDrink(){
       console.log('Fetch Error :-S', err);
     });
 
+} 
+
+var array = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t"]
+for(var i =0;i<array.length;i++){
+var letter = array[i]
+console.log(array[i]);
+getRandomDrink(letter);
 }
-getRandomDrink();
+
+
 
 function displayRandomDrink(drink){
   for(i=0;i<drink.drinks.length;i++){
-    console.log(drink.drinks[i]);
     let drinkSection = document.querySelector('#drinkSect');
     let drinkName = document.createElement('h2');
     drinkName.innerHTML = drink.drinks[i].strDrink;
