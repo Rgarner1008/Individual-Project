@@ -15,7 +15,8 @@ def searchDrink(request):
 def profile(request):
     return render(request, 'mixquick/profile.html')
 
-
+def fullList(request):
+    return render(request, 'mixquick/List of drinks.html')
 
 def loginV(request):
     if request.user.is_authenticated():
