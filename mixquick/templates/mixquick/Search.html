@@ -42,32 +42,39 @@
     </div>
     
     <h2 align="center" >Drink Search</h2> 
-<p align="center">Select which liquors you have available to you:</p>
-
-<form action="randomDrink.html">
+    
+       
   <input type="checkbox" id="alc" name="alc" value="Vodka">
-  <label for="alc1"> Vodka</label><br>
+  <label for="alc"> Vodka</label><br>
 
   <input type="checkbox" id="alc" name="alc" value="Whiskey">
-  <label for="alc2"> Whiskey</label><br>
+  <label for="alc"> Whiskey</label><br>
 
   <input type="checkbox" id="alc" name="alc" value="Gin">
-  <label for="alc3"> Gin</label><br>
+  <label for="alc"> Gin</label><br>
 
   <input type="checkbox" id="alc" name="alc" value="Rum">
-  <label for="alc4"> Rum</label><br>
+  <label for="alc"> Rum</label><br>
 
   <input type="checkbox" id="alc" name="alc" value="Tequila">
-  <label for="alc5"> Tequila</label><br>
+  <label for="alc"> Tequila</label><br>
 
   <input type="checkbox" id="alc" name="alc" value="Liqueur">
-  <label for="alc6"> Liqueur</label><br>
+  <label for="alc"> Liqueur</label><br>
 
   <input type="checkbox" id="alc" name="alc" value="Cognac">
-  <label for="alc7"> Cognac</label><br><br>
-  <input type="submit" value="Submit">
+  <label for="alc"> Cognac</label><br><br>
+  <button name="Submit" type="button" onclick="return changeText()">Submit</button>
 </form> 
+<p="center">Select which liquors you have available to you:</p>
+<b id='userInputliquor'></b><br />
 
-<link href="/static/main.css" rel="stylesheet" />
-<script src="script.js"></script>
+<section id="drinkSect"></section>
+
+
+<script src="searchDrink.js"></script>
+
+<link href="styles/main.css" rel="stylesheet" />
+
+
 </html>
