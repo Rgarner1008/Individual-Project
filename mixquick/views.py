@@ -12,6 +12,9 @@ def random(request):
 def searchDrink(request):
     return render(request, 'mixquick/Search.html')
 
+def fullDrink(request):
+    return render(request, 'mixquick/List of drinks.html')
+
 def loginV(request):
     if request.user.is_authenticated():
         return redirect('home')
