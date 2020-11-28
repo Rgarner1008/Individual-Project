@@ -9,6 +9,9 @@ def index(request):
 def random(request):
     return render(request, 'mixquick/randomDrink.html')
 
+def profile(request):
+    return render(request, 'mixquick/profile.html')
+
 def searchDrink(request):
     return render(request, 'mixquick/Search.html')
 
