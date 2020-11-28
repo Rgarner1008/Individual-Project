@@ -119,7 +119,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
+<<<<<<< HEAD
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+=======
+
+>>>>>>> parent of 143c5c6... fixing heroku
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'assets'),
