@@ -52,7 +52,7 @@ for ( i = 0; i < checkboxes.length; i++) {
         img.src = drink.drinks[i].strDrinkThumb;
         drinkSection.appendChild(img);
     
-        /*for (let j = 1; j<16; j++){
+        for (let j = 1; j<16; j++){
     
           if(drink.drinks[i] [`strIngredient${j}`] == null){
             break;
@@ -64,7 +64,7 @@ for ( i = 0; i < checkboxes.length; i++) {
         }
         let card = document.createElement('card');
         card.innerHTML = drink.drinks[i].strInstructions;
-        drinkSection.appendChild(card);*/
+        drinkSection.appendChild(card);
       }
     }
  
